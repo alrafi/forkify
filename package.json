@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/alrafi/forkify/issues"
   },
-  "homepage": "https://github.com/alrafi/forkify#readme"
+  "homepage": "https://github.com/alrafi/forkify#readme",
+  "devDependencies": {
+    "webpack": "^4.41.5"
+  }
 }
