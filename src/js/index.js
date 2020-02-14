@@ -1,4 +1,14 @@
 // global app container
-import num from './test';
-const x = 2020;
-console.log(`imported ${num} from another module x is ${x}`);
+import Search from './models/Search';
+
+const state = {};
+
+const controlSearch = async () => {
+  state.search = new Search('pizza');
+
+  await state.search.getRecipes();
+
+  console.log(state.search.result);
+};
+
+controlSearch();
